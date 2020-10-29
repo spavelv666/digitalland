@@ -26,7 +26,7 @@ PROJECT_ROOT = os.path.dirname(__file__)
 SECRET_KEY = 'zfq=kn-r4tzgu57a(gu9g#2yjpanm2@z2g+r3iq3f_g(z9)4is'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['10.146.195.138',
                  '127.0.0.1',

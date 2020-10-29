@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="{% static 'css/start.css' %}">
+</head>
+<body>
+<center>
+<h1 class="neon">Digital Land</h1>
+{% for movie in movie_list %}
+<div>
+        <div>
+            <h4>
+                <a class="fire" href="moviesingle.html" >
+                   {{ movie.title }}
+                </a>
+            </h4>
+
+        </div>
+
+         <div>
+             <h2>
+         <span  >{{ movie.tagline }}</span>
+                   </h2>
+         </div>
+
+
+
+<img src="{{ movie.poster.url }}">
+
+</div>
+<div class="block1">
+    <span class="disk">
+
+     {{ movie.description }}
+        </span>
+
+</div>
+    <br>
+{% endfor %}
+     <br>
+<br>
+    <a class="fire" href="/">На главную</a>
+
+</center>
+</body>
+</html>
